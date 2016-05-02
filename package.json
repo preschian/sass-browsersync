@@ -1,0 +1,23 @@
+{
+  "name": "sass-browsersync",
+  "version": "1.0.0",
+  "description": "Compile SASS and live reload using Browsersync in Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "author": "Preschian Febryantara",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-processhtml": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha"
+  }
+}
