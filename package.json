@@ -14,10 +14,13 @@
   "author": "Preschian Febryantara",
   "license": "MIT",
   "devDependencies": {
+    "bourbon": "^4.2.7",
     "browser-sync": "^2.12.5",
+    "flexiblegs-scss": "^5.5.1",
     "gulp": "^3.9.1",
     "gulp-processhtml": "^1.1.0",
     "gulp-sass": "^2.3.1",
-    "gulp-sourcemaps": "^2.0.0-alpha"
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "normalize.css": "^4.1.1"
   }
 }

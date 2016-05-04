@@ -35,7 +35,7 @@ gulp.task('live', ['sass', 'html'], function() {
 gulp.task('sass', function() {
     return gulp.src(PATH.SASS.BUILD)
         .pipe(source.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({ includePaths: 'node_modules/', outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(source.write())
         .pipe(gulp.dest(PATH.SASS.OUTPUT))
         .pipe(serve.stream());
@@ -43,7 +43,7 @@ gulp.task('sass', function() {
 
 gulp.task('sass:min', function() {
     return gulp.src(PATH.SASS.BUILD)
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sass({ includePaths: 'node_modules/', outputStyle: 'compressed' }))
         .pipe(gulp.dest(PATH.SASS.OUTPUT));
 });
 
